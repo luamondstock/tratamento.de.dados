@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Old+Uyghur&family=Playpen+Sans:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor01: #d81159ff;
+    --cor02: #8f2d56ff;
+    --cor03: #218380ff;
+    --non-photo-blue: #73d2deff;
+    --pretinho: #040404ff;
+    --font-family: "Playpen Sans", cursive;
+    --fonte-texto: "Noto Serif Old Uyghur", serif;
+}
+
+body{
+    background-color: var(--non-photo-blue);
+    font-family: var(--font-family);
+    color: var(--pretinho);
+    height: 100v;
+}
+header{
+    background-color:var(--cor03);
+    text-align: center;
+}
+
+h1{
+    font-family: var(--fonte-texto);
+    font-size: 3rem;
+    color: var(--non-photo-blue);
+    padding: 1.5rem 0;
+}
+nav a{
+    text-decoration: none ;
+    color: #040404ff;
+    font-size: 2rem;
+    
+}
