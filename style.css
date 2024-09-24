@@ -5,30 +5,30 @@
 }
 
 :root{
-    --cor01: #d81159ff;
-    --cor02: #8f2d56ff;
-    --cor03: #218380ff;
-    --non-photo-blue: #73d2deff;
+    --cor01: rgb(113, 17, 216);
+    --cor02: rgb(81, 20, 83);
+    --cor03: rgb(172, 118, 220);
+    --roxinho: rgb(174, 0, 255);
     --pretinho: #040404ff;
     --font-family: "Playpen Sans", cursive;
     --fonte-texto: "Noto Serif Old Uyghur", serif;
 }
 
 body{
-    background-color: var(--non-photo-blue);
+    background-color: var(--cor02);
     font-family: var(--font-family);
     color: var(--pretinho);
     height: 100v;
 }
 header{
-    background-color:var(--cor03);
+    background-color:var(--cor02);
     text-align: center;
 }
 
 h1{
     font-family: var(--fonte-texto);
     font-size: 3rem;
-    color: var(--non-photo-blue);
+    color: var(--cor03);
     padding: 1.5rem 0;
 }
 nav a{
@@ -38,12 +38,29 @@ nav a{
 }
 nav a{
     text-decoration: none;
-    color: var(--cor03);
+    color: var(--pretinho);
     font-size: 2rem;
     margin: 0 2rem 1rem 0 ;
+
+}
+nav a:hover{
+    text-transform: underline;
+    color: var(--cor02);
+    transform: scale(0.9);
+    transition: transform 0.3s;
 }
 
-
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor03);
+    color: var(--cor02);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
 
 
 
