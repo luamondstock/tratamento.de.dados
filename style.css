@@ -32,8 +32,19 @@ h1{
     padding: 1.5rem 0;
 }
 nav a{
-    text-decoration: none ;
-    color: #040404ff;
-    font-size: 2rem;
-    
+    text-decoration: flex ;
+    justify-content: center;
+    font-weight: 400;
 }
+nav a{
+    text-decoration: none;
+    color: var(--cor03);
+    font-size: 2rem;
+    margin: 0 2rem 1rem 0 ;
+}
+
+
+
+
+
+
