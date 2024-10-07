@@ -24,6 +24,13 @@ async function criarGraficoPizza(){
     const livrosTitulo = document.createElement("h3")
     livrosTitulo.classList.add("caixa-grafico__titulo")
     livrosTitulo.innerHTML = ' Os <span>livros</span> mais vendidos da editora seguinte em 2023'
+
+      const grafico = document.createElement('div')
+    grafico.className = 'grafico-disco'
+    document.getElementById('caixa-grafico').appendChild(livrosTitulo)
+    document.getElementById('caixa-grafico').appendChild(grafico)
+    Plotly.newPlot(grafico, data, layout)
+    
 }
 
 criarGraficoPizza()
