@@ -19,18 +19,23 @@ async function criarGraficoBarra(){
     ]
     const layout = {
         plot_bgcolor: pegarCSS('--cor03'),
-        papper_bgcolor: pegarCSS('--cor02'),
+        paper_bgcolor: pegarCSS('--cor03'),
         height: 500, 
+        font:{
+            color: pegarCSS('--pretinho'),
+            family: pegarCSS('--pretinho'),
+            size: 16,
+          },
         title:{
             text: 'Os livros mais vendidos no mundo',
             font:{
               color: pegarCSS('--cor02'),
-              size: 20,
+              size: 30,
                 }
         },
         xaxis:{
             tickfont: configuraEixo,
-            tickangle: 35
+            tickangle: 20
         },
         yaxis:{
             tickfont: configuraEixo,

@@ -23,8 +23,8 @@ async function graficosTancredo(){
     ]
     const layout = 
     {
-        plot_bgcolor: pegarCSS('--br'),
-        paper_bgcolor: pegarCSS('--'),
+        plot_bgcolor: pegarCSS('--cor03'),
+        paper_bgcolor: pegarCSS('--cor03'),
         font:{
             color: pegarCSS('--cor02'),
             family: pegarCSS('--fonto-titulo'),
@@ -34,7 +34,7 @@ async function graficosTancredo(){
 
     const pesquisaTitulo = document.createElement('h3')
     pesquisaTitulo.classList.add('caixa-grafico__titiulo')
-    pesquisaTitulo.innerHTML = `Os livros mais votados no Colégio <span>Tancredo</span>`
+    pesquisaTitulo.innerHTML = `Os livros mais votados no Colégio <span>Tancredo</span>:`
     
     const grafico = document.createElement('div')
     grafico.className = 'grafico-disco'
@@ -49,7 +49,7 @@ async function graficosTancredo(){
     const caixa = document.getElementById('caixa-grafico');
     const paragrafo = document.createElement('p');
     paragrafo.classList.add('caixa-grafico__texto');
-    paragrafo.innerHTML = 'Nota-se que o livro mais votado no colégio Tancredo é diferente do mais votado no mundo. Enquanto os estudantes elegeram, com 25 votos, <span>o PlayStation 5</span> como o livro mais desejado, já a pesquisa global indicou que <span>o Nintendo Switch</span> é o livro mais comprado no mundo. Na pesquisa feita na escola, o mesmo ficou em segundo lugar.';
+    paragrafo.innerHTML = 'Nota-se que o livro mais votado no colégio Tancredo, é diferente do mais votado no Brasil. Enquanto os estudantes elegeram, com 8 votos, <span>o Hearstopper: Dois garotos, um encontro</span> como o livro mais desejado, já a pesquisa nacional indicou que <span>Vermelho Branco e Sangue Azul</span> é o livro mais comprado Brasil. Na pesquisa feita na escola, o mesmo ficou em terceiro lugar.';
 
     caixa.appendChild(paragrafo);
 }
